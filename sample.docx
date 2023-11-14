@@ -1,3 +1,69 @@
-Hello World..!!
+CSS - W3SCHOOLS
+--> CSS SELECTORS
+ A*Simple selectors - name, #id, .class
 
-Saasa
+ B*Combinator selectors - specific relationship between them
+	types of combinator selectors
+		i) descendant selector --> selects all the elements that are descendants to the specific element.
+			eg. div p {
+				      background-colour: yellow;
+				  }
+                          (highlights the div's p written chars)
+
+		ii)child selector --> selects all the elements which are children of specific element.
+			 eg. div > p {
+					background-colour: yellow;
+				     }
+                       (highlights  only the div's p written chars)
+
+		iii) adjacent sibiling selector --> select an element that is directly after another specific element or selects the elements that are placed immediately after the child elements.
+ 			 eg. div + p {
+					background-colour: yellow;
+				     }
+                        (highlights  after the div's p written chars only the 1st sibiling)
+
+		iv) general sibiling selector -->  selects all elements that are next siblings of a specified element.
+			eg. div ~ p {
+ 					background-colour: yellow;
+				     }
+                         (highlights  after the div's p written chars all the sibilings)
+ C*Pseudo-class selectors - certain state :STATE
+
+ syntax: selector:pseudo-class div: hover {
+ 					 property: value;
+					 color: blue;
+				          }
+ 1)The :first-child Pseudo-class --> higlights the first child of the parent ie., div-parent p- firstchild 
+		eg. p:first-child {
+ 			 color: blue;
+ 				  }
+	2) The first <i> element in all <p> elements --> highlights  all the i tag of parent p tag.
+		eg. p i:first-child {
+			 color: blue;
+ 				  }
+	3)<i> elements in all first child <p> elements --> higlights  only the first child of p having i tag.
+               eg. p: first-child i {
+			 color: blue 
+                                     }
+ 	4) The :lang Pseudo-class  --> represents by quotation.
+		eg. q:lang(no) {
+ 			 quotes: "~" "~";
+				}
+ where q denotes quotes , lang denotes attribute , no denotes cls
+
+
+ D*Pseudo-elements selectors -::ELEMENT
+ syntax : selector::pseudo-element {
+                           property: value;
+                                          }
+ 1)The ::first-line Pseudo-element:- it highlights the first line
+ 	
+ 2)The ::first-letter Pseudo-element:- it highlights the first letter
+ 
+ 3)The ::after Pseudo-element,The ::before Pseudo-element :- prints after and before.
+ 
+ 4) The ::selection Pseudo-element:- makes difference while selecting.
+
+ E*Attribute selectors  attribute value =[attribute], =>
+					[attribute="value"], =>
+					[attribute~="value"]=> indicates specific value
