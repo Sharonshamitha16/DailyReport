@@ -1,8 +1,8 @@
 CSS - W3SCHOOLS
 --> CSS SELECTORS
- A*Simple selectors - name, #id, .class
+ A)Simple selectors - name, #id, .class
 
- B*Combinator selectors - specific relationship between them
+ B)Combinator selectors - specific relationship between them
 	types of combinator selectors
 		i) descendant selector --> selects all the elements that are descendants to the specific element.
 			eg. div p {
@@ -27,7 +27,7 @@ CSS - W3SCHOOLS
  					background-colour: yellow;
 				     }
                          (highlights  after the div's p written chars all the sibilings)
- C*Pseudo-class selectors - certain state :STATE
+ C)Pseudo-class selectors - certain state :STATE
 
  syntax: selector:pseudo-class div: hover {
  					 property: value;
@@ -54,41 +54,7 @@ CSS - W3SCHOOLS
 so many  pseudo-classes available :
 
 
-Selector	Example	Example description
-:active		a:active	Selects the active link
-:checked	input:checked	Selects every checked <input> element
-:disabled	input:disabled	Selects every disabled <input> element
-:empty		p:empty	Selects every <p> element that has no children
-:enabled	input:enabled	Selects every enabled <input> element
-:first-child	p:first-child	Selects every <p> elements that is the first child of its parent
-:first-of-type	p:first-of-type	Selects every <p> element that is the first <p> element of its parent
-:focus		input:focus	Selects the <input> element that has focus
-:hover		a:hover	Selects links on mouse over
-:in-range	input:in-range	Selects <input> elements with a value within a specified range
-:invalid	input:invalid	Selects all <input> elements with an invalid value
-:lang(language)	p:lang(it)	Selects every <p> element with a lang attribute value starting with "it"
-:last-child	p:last-child	Selects every <p> elements that is the last child of its parent
-:last-of-type	p:last-of-type	Selects every <p> element that is the last <p> element of its parent
-:link		a:link		Selects all unvisited links
-:not(selector)	:not(p)		Selects every element that is not a <p> element
-:nth-child(n)	p:nth-child(2)	Selects every <p> element that is the second child of its parent
-:nth-last-child(n)	p:nth-last-child(2)	Selects every <p> element that is the second child of its parent, counting from the last child
-:nth-last-of-type(n)	p:nth-last-of-type(2)	Selects every <p> element that is the second <p> element of its parent, counting from the last child
-:nth-of-type(n)	p:nth-of-type(2)Selects every <p> element that is the second <p> element of its parent
-:only-of-type	p:only-of-type	Selects every <p> element that is the only <p> element of its parent
-:only-child	p:only-child	Selects every <p> element that is the only child of its parent
-:optional	input:optional	Selects <input> elements with no "required" attribute
-:out-of-range	input:out-of-range Selects <input> elements with a value outside a specified range
-:read-only	input:read-only	Selects <input> elements with a "readonly" attribute specified
-:read-write	input:read-write Selects <input> elements with no "readonly" attribute
-:required	input:required	Selects <input> elements with a "required" attribute specified
-:root	root	Selects the document's root element
-:target		#news:target	Selects the current active #news element (clicked on a URL containing that anchor name)
-:valid		input:valid	Selects all <input> elements with a valid value
-:visited 	a:visited	Selects all visited links
-
-
- D*Pseudo-elements selectors -::ELEMENT
+ D)Pseudo-elements selectors -::ELEMENT
  syntax : selector::pseudo-element {
                            property: value;
                                           }
@@ -108,10 +74,10 @@ Selector	Example	Example description
 					[attribute$="value"]=>attribute which ends with the specific value will be called or highlighted.
 					[attribute*="value"]=>attribute which contains the half of the specific valuewill be called or highlighted.
 
---> CSS TYPES
+--> CSS types
 A) INTERNAL CSS=> <style> </style>
 B) EXTERNAL CSS=> <link rel ="stylesheet" href ="style.css">
-C)INLINE CSS=> <style ="color=red; text-align=center;">
+C)INLINE CSS=> <style = " color = red; text-align=center;">
 
 
 --> CSS comments
@@ -122,7 +88,7 @@ B) multi line => /* this
 C) another form of comment <!-- This a comment line -->
 
 
--->CSS COLORS
+-->CSS colors
 A)  bg color -> background-color:"
 B)  bordercolor -> border-color:
 C) textcolor -> color:
@@ -132,30 +98,30 @@ hex=> #ff6347 rr-ff, gg-63 , bb-47
 hsl=>(0,100%,100%) h-hue 0-360 degree , s-saturation 0% complete gray; 100% no gray shade, l-lightness 0% no black 50% neither light nor black 100% lightness
 
 
---> CSS BACKGROUNDS
+--> CSS backgrounds
 background-col
 background-image :url("p.gif");
-background-repeat=> background-repeat: repeat-x;(horizontal) background-repeat: repeat-y; (vertical) 
+background-repeat => background-repeat: repeat-x; (horizontal) background-repeat: repeat-y; (vertical) 
 background-attachment: fixed, scroll 
 background-position => right top , left top , etcc..
 background shorthand=> background: #ffffff url("img_tree.png") no-repeat right top; (everything at a time assigning)
 
---> CSS BORDERS
-dotted - Defines a dotted border EG:-border-style: dotted;
-dashed - Defines a dashed border
-solid - Defines a solid border
-double - Defines a double border
-groove - Defines a 3D grooved border. The effect depends on the border-color value
-ridge - Defines a 3D ridged border. The effect depends on the border-color value
-inset - Defines a 3D inset border. The effect depends on the border-color value
-outset - Defines a 3D outset border. The effect depends on the border-color value
-none - Defines no border
-hidden -Defines a hidden border
+--> CSS borders
+*dotted
+*dashed
+*solid 
+*double 
+*groove 
+*ridge 
+*inset
+*outset 
+*none
+*hidden 
 
-A) border-width: MEDIUM , THICK ETC...
+A) border-width: medium,thick,etc...
 B) border-color:
-c)border-sides:=>
+C)border-sides :=>
   border-top-style: dotted;
-  border-right-style: solid;
-  border-bottom-style: dotted;
-  border-left-style: solid;
+  border-right-style : solid;
+  border-bottom-style : dotted;
+  border-left-style : solid;
