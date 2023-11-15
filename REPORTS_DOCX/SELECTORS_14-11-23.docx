@@ -21,7 +21,7 @@ CSS - W3SCHOOLS
 					background-colour: yellow;
 				     }
                         (highlights  after the div's p written chars only the 1st sibiling)
-
+ 
 		iv) general sibiling selector -->  selects all elements that are next siblings of a specified element.
 			eg. div ~ p {
  					background-colour: yellow;

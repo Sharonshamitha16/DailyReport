@@ -1,0 +1,161 @@
+CSS - W3SCHOOLS
+--> CSS SELECTORS
+ A*Simple selectors - name, #id, .class
+
+ B*Combinator selectors - specific relationship between them
+	types of combinator selectors
+		i) descendant selector --> selects all the elements that are descendants to the specific element.
+			eg. div p {
+				      background-colour: yellow;
+				  }
+                          (highlights the div's p written chars)
+
+		ii)child selector --> selects all the elements which are children of specific element.
+			 eg. div > p {
+					background-colour: yellow;
+				     }
+                       (highlights  only the div's p written chars)
+
+		iii) adjacent sibiling selector --> select an element that is directly after another specific element or selects the elements that are placed immediately after the child elements.
+ 			 eg. div + p {
+					background-colour: yellow;
+				     }
+                        (highlights  after the div's p written chars only the 1st sibiling)
+
+		iv) general sibiling selector -->  selects all elements that are next siblings of a specified element.
+			eg. div ~ p {
+ 					background-colour: yellow;
+				     }
+                         (highlights  after the div's p written chars all the sibilings)
+ C*Pseudo-class selectors - certain state :STATE
+
+ syntax: selector:pseudo-class div: hover {
+ 					 property: value;
+					 color: blue;
+				          }
+ 1)The :first-child Pseudo-class --> higlights the first child of the parent ie., div-parent p- firstchild 
+		eg. p:first-child {
+ 			 color: blue;
+ 				  }
+	2) The first <i> element in all <p> elements --> highlights  all the i tag of parent p tag.
+		eg. p i:first-child {
+			 color: blue;
+ 				  }
+	3)<i> elements in all first child <p> elements --> higlights  only the first child of p having i tag.
+               eg. p: first-child i {
+			 color: blue 
+                                     }
+ 	4) The :lang Pseudo-class  --> represents by quotation.
+		eg. q:lang(no) {
+ 			 quotes: "~" "~";
+				}
+ where q denotes quotes , lang denotes attribute , no denotes cls
+
+so many  pseudo-classes available :
+
+
+Selector	Example	Example description
+:active		a:active	Selects the active link
+:checked	input:checked	Selects every checked <input> element
+:disabled	input:disabled	Selects every disabled <input> element
+:empty		p:empty	Selects every <p> element that has no children
+:enabled	input:enabled	Selects every enabled <input> element
+:first-child	p:first-child	Selects every <p> elements that is the first child of its parent
+:first-of-type	p:first-of-type	Selects every <p> element that is the first <p> element of its parent
+:focus		input:focus	Selects the <input> element that has focus
+:hover		a:hover	Selects links on mouse over
+:in-range	input:in-range	Selects <input> elements with a value within a specified range
+:invalid	input:invalid	Selects all <input> elements with an invalid value
+:lang(language)	p:lang(it)	Selects every <p> element with a lang attribute value starting with "it"
+:last-child	p:last-child	Selects every <p> elements that is the last child of its parent
+:last-of-type	p:last-of-type	Selects every <p> element that is the last <p> element of its parent
+:link		a:link		Selects all unvisited links
+:not(selector)	:not(p)		Selects every element that is not a <p> element
+:nth-child(n)	p:nth-child(2)	Selects every <p> element that is the second child of its parent
+:nth-last-child(n)	p:nth-last-child(2)	Selects every <p> element that is the second child of its parent, counting from the last child
+:nth-last-of-type(n)	p:nth-last-of-type(2)	Selects every <p> element that is the second <p> element of its parent, counting from the last child
+:nth-of-type(n)	p:nth-of-type(2)Selects every <p> element that is the second <p> element of its parent
+:only-of-type	p:only-of-type	Selects every <p> element that is the only <p> element of its parent
+:only-child	p:only-child	Selects every <p> element that is the only child of its parent
+:optional	input:optional	Selects <input> elements with no "required" attribute
+:out-of-range	input:out-of-range Selects <input> elements with a value outside a specified range
+:read-only	input:read-only	Selects <input> elements with a "readonly" attribute specified
+:read-write	input:read-write Selects <input> elements with no "readonly" attribute
+:required	input:required	Selects <input> elements with a "required" attribute specified
+:root	root	Selects the document's root element
+:target		#news:target	Selects the current active #news element (clicked on a URL containing that anchor name)
+:valid		input:valid	Selects all <input> elements with a valid value
+:visited 	a:visited	Selects all visited links
+
+
+ D*Pseudo-elements selectors -::ELEMENT
+ syntax : selector::pseudo-element {
+                           property: value;
+                                          }
+ 1)The ::first-line Pseudo-element:- it highlights the first line
+ 	
+ 2)The ::first-letter Pseudo-element:- it highlights the first letter
+ 
+ 3)The ::after Pseudo-element,The ::before Pseudo-element :- prints after and before.
+ 
+ 4) The ::selection Pseudo-element:- makes difference while selecting.
+
+ E*Attribute selectors  attribute value =[attribute], => specific attribute highlighted or called.
+					[attribute="value"], => attribute's specific value is called or highlighted.
+					[attribute~="value"]=>attribute containing the specific value will be called or highlighted.
+					[attribute|="value"]=> attribute having the exact specific value or continued with a hypen will be highlighted or called.
+					[attribute^="value"]=> attribute which starts with specific value will be called or highlighted.
+					[attribute$="value"]=>attribute which ends with the specific value will be called or highlighted.
+					[attribute*="value"]=>attribute which contains the half of the specific valuewill be called or highlighted.
+
+--> CSS TYPES
+A) INTERNAL CSS=> <style> </style>
+B) EXTERNAL CSS=> <link rel ="stylesheet" href ="style.css">
+C)INLINE CSS=> <style ="color=red; text-align=center;">
+
+
+--> CSS comments
+A)  Single line =>/* THIS IS A COMMENT */
+B) multi line => /* this
+		  is a 
+		  comment*/
+C) another form of comment <!-- This a comment line -->
+
+
+-->CSS COLORS
+A)  bg color -> background-color:"
+B)  bordercolor -> border-color:
+C) textcolor -> color:
+
+RGB=> rgb(255,99, 71) , (255,9971,0) 255-red, 99-green ,71-blue , 0-alpha (transparency)
+hex=> #ff6347 rr-ff, gg-63 , bb-47
+hsl=>(0,100%,100%) h-hue 0-360 degree , s-saturation 0% complete gray; 100% no gray shade, l-lightness 0% no black 50% neither light nor black 100% lightness
+
+
+--> CSS BACKGROUNDS
+background-col
+background-image :url("p.gif");
+background-repeat=> background-repeat: repeat-x;(horizontal) background-repeat: repeat-y; (vertical) 
+background-attachment: fixed, scroll 
+background-position => right top , left top , etcc..
+background shorthand=> background: #ffffff url("img_tree.png") no-repeat right top; (everything at a time assigning)
+
+--> CSS BORDERS
+dotted - Defines a dotted border EG:-border-style: dotted;
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden -Defines a hidden border
+
+A) border-width: MEDIUM , THICK ETC...
+B) border-color:
+c)border-sides:=>
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
