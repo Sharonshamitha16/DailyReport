@@ -1,0 +1,75 @@
+--> CSS borders
+*dotted
+*dashed
+*solid 
+*double 
+*groove 
+*ridge 
+*inset
+*outset 
+*none
+*hidden 
+
+A) border-width: medium,thick,etc...
+B) border-color:
+C)border-sides :=>
+  border-top-style: dotted;
+  border-right-style : solid;
+  border-bottom-style : dotted;
+  border-left-style : solid;
+D) border-shorthand:
+border with  width ,color, style 
+
+-->CSS margins
+A)Margins:-
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+B) Margin-shorthand margin: toppx rightpx bottompx leftpx;(4 values)
+		       margin: toppx rightpx bottompx;(3 values)
+		       margin: toppx&bottompx rightpx&leftpx;(2 values)
+ 	               margin: px;(1 value)
+
+-->CSS padding
+A)Padding:-
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+B)Padding-shorthand :- padding:  toppx rightpx bottompx leftpx;(4 values)
+		       padding:  toppx rightpx bottompx;(3 values)
+		       padding:  toppx&bottompx rightpx&leftpx;(2 values)
+ 	               padding:  px;(1 value)
+--> CSS height /width
+A) auto- default
+   length- cm, px 
+   height/width - %
+   inherit-  getting from parent value
+--> CSS Box model
+margin
+border
+padding 
+content
+
+--> CSS outline
+outline-style :
+*dotted
+*dashed
+*solid 
+*double 
+*groove 
+*ridge 
+*inset
+*outset 
+*none
+*hidden 
+
+outline-color
+outline-width:
+*thin
+*medium
+*thick
+* specific size
+outline-offset
+outline
