@@ -1,0 +1,73 @@
+--> CSS outline
+outline-style :
+*dotted
+*dashed
+*solid 
+*double 
+*groove 
+*ridge 
+*inset
+*outset 
+*none
+*hidden 
+=>outline-color: can be as name,hex(#ff0000),hue(hsl(0,100%,50%)
+=>outline-width:
+*thin
+*medium
+*thick
+* specific size
+=>outline-offset
+=>outline-shorthand: 
+outline: width,style,color for eg. 5px dotted yellow;
+-->CSS text 
+text color:-color:blue;
+
+text-align: left,right,center,justify;
+
+text-direction:-
+direction:rtl;=>default direction
+
+unicode-biddi: bidi-override;=> reverse text
+
+vertcal-align: baseline(default),
+text-top(img at top side),
+text-bottom(img at bottomside) ,
+sub(upwards text),
+super(downwards)
+Text decoration:-
+text-decoration-line
+text-decoration-color
+text-decoration-style
+text-decoration-thickness
+text-decoration
+
+text-decoration-line: overline(top of the text),
+underline(bottom of the text)
+line-through(striking the text)
+overline underline( top and bottom of the text)
+
+text-decoation-color: nay colors;
+
+text-decoration-style:
+solid
+double
+dotted
+dashed
+wavy
+
+text-decoration-thickness: px, auto;
+
+text-decoration-shorthand:-
+text-decoration: line color style px; 
+for eg; underline blue dashed 5px;
+text-decoration: none => doesn't have any sort of decoration.
+
+ text-transform: uppercase(caps), lowercase(small),captialized(starting letter caps)
+
+text-spacing:
+--text-indent: px;
+--letter-spacing: px, -px( reduces space)
+--line-height: 0.7,0.8; (space btw line)
+--word-spacing:
+--white-space: now rap;( it prints continuously)
+--text-shadow:  horizontal 2 vertical 2 px and color;
